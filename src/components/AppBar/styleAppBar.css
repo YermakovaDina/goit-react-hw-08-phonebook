@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: rgba(71, 160, 243, 0.788);
+}
+
+.container__left {
+  margin-left: 50px;
+}
+
+.container__right {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.text__left,
+.text__right {
+  text-decoration: none;
+  color: white;
+}
+
+.text__left:hover,
+.text__left:focus,
+.text__right:hover,
+.text__right:focus {
+  color: rgb(10, 51, 105);
+}

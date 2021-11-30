@@ -1,0 +1,24 @@
+.title {
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: rgb(8, 80, 173);
+
+  margin-top: 100px;
+}
+
+.title__registre,
+.title__login {
+  color: rgb(10, 51, 105);
+  text-decoration: none;
+}
+
+.title__registre:hover,
+.title__registre:focus,
+.title__login:hover,
+.title__login:focus {
+  color: rgb(56, 111, 182);
+}

@@ -1,0 +1,18 @@
+h1,
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: blue;
+}
+
+.container {
+  box-shadow: 5px 5px 15px 5px #000;
+  padding: 15px 25px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
