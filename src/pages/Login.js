@@ -21,7 +21,7 @@ export function Login() {
   return (
     <>
       <form
-        className=""
+        className="form"
         onSubmit={e => {
           e.preventDefault();
           loginUser({ email: login, password });
@@ -29,13 +29,13 @@ export function Login() {
           setPassword('');
         }}
       >
-        <h3 className="">Is yours login.</h3>
+        <h3 className="form__title">Is yours login.</h3>
 
         <input
           id="inputName"
           type="text"
           name="login"
-          className=""
+          className="form__input"
           pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
           title="Input valid email"
           placeholder="E-mail"
@@ -48,7 +48,7 @@ export function Login() {
         <input
           type="password"
           name="password"
-          className=""
+          className="form__input"
           pattern="\w{4,16}"
           title="The password can consist of Latin letters or numbers from 4 to 16 characters"
           placeholder="Password"
@@ -57,7 +57,7 @@ export function Login() {
           onChange={handleChangeAllInput}
           value={password}
         />
-        <button className="" type="submit">
+        <button className="form__button" type="submit">
           Login
         </button>
       </form>

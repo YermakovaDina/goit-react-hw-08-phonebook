@@ -1,9 +1,11 @@
 .container {
+  font-family: 'Montserrat';
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
   padding-top: 15px;
   background-color: rgba(71, 160, 243, 0.788);
+  font-size: 32px;
 }
 
 .container__left {
@@ -27,4 +29,12 @@
 .text__right:hover,
 .text__right:focus {
   color: rgb(10, 51, 105);
+}
+
+.active {
+  color: rgb(10, 51, 105);
+}
+
+.text__login {
+  margin-left: 15px;
 }

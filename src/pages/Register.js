@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchSubmitUser } from '../redux/contacts/operations';
 import { Navigate } from 'react-router-dom';
+import './Register.css';
 
 export function Registration() {
   const [name, setName] = useState('');
@@ -33,7 +34,7 @@ export function Registration() {
   return (
     <>
       <form
-        className=""
+        className="form"
         onSubmit={e => {
           e.preventDefault();
           submitUser({ name, email, password });
@@ -42,12 +43,12 @@ export function Registration() {
           setPassword('');
         }}
       >
-        <h3 className="">Instant registration.</h3>
+        <h3 className="form__title">Instant registration.</h3>
         <input
           id="inputName"
           type="text"
           name="name"
-          className=""
+          className="form__input"
           pattern="\w{4,16}"
           title="The password can consist of Latin letters or numbers from 4 to 16 characters"
           placeholder="Name"
@@ -59,7 +60,7 @@ export function Registration() {
         <input
           type="text"
           name="email"
-          className=""
+          className="form__input"
           pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
           title="Input valid email"
           placeholder="E-mail"
@@ -72,7 +73,7 @@ export function Registration() {
         <input
           type="password"
           name="password"
-          className=""
+          className="form__input"
           pattern="\w{7,16}"
           title="The password can consist of Latin letters or numbers from 4 to 16 characters"
           placeholder="Password"
@@ -82,7 +83,7 @@ export function Registration() {
           value={password}
         />
 
-        <button className="" type="submit">
+        <button className="form__button" type="submit">
           Register
         </button>
       </form>
@@ -91,14 +92,3 @@ export function Registration() {
   );
 }
 export default Registration;
-// =================
-// export function Register() {
-//   return (
-//     <>
-//       <h2>Register Form</h2>
-//       <form>
-//         <input />
-//       </form>
-//     </>
-//   );
-// }

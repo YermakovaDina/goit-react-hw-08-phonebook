@@ -40,11 +40,16 @@ export default function ContactsList() {
     });
   }
   return (
-    <ul className="">
+    <ul className="list">
       {filterContacts().map(el => (
-        <li className="" key={el.id}>
+        <li className="list__item" key={el.id}>
           {el.name}: {el.number}
-          <button type="button" className="" id={el.id} onClick={del}>
+          <button
+            type="button"
+            className="list__button"
+            id={el.id}
+            onClick={del}
+          >
             Delete
           </button>
         </li>

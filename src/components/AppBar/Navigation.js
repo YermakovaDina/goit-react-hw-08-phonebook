@@ -8,7 +8,7 @@ export function Navigation() {
         Registration
       </NavLink>
 
-      <NavLink className="text__right" to="/login">
+      <NavLink className="text__right text__login" to="/login">
         Login
       </NavLink>
     </div>
