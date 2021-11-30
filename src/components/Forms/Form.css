@@ -9,8 +9,8 @@
   border-radius: 5px;
   width: 250px;
   padding: 20px 10px;
-} */
-/* 
+}  */
+
 .form_label {
   display: flex;
   justify-content: space-between;
@@ -44,4 +44,4 @@
 .form_button:focus {
   border: 2px solid blue;
   background-color: #c6c9f5bb;
-} */
+}

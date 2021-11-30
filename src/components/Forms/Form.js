@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-
 import { v4 as uuidv4 } from 'uuid';
-
 import { useDispatch, useSelector } from 'react-redux';
 import { submitPhone } from '../../redux/contacts/operations';
+import './Form.css';
 
 export default function Form() {
   const inputNameId = uuidv4();

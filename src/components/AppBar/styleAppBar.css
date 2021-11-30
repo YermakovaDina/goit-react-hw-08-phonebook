@@ -42,13 +42,15 @@
 .button__nav {
   transition-property: background-color;
   transition-duration: 300ms;
+  margin-left: 10px;
   font-size: 20px;
   height: 28px;
-  background-color: rgba(71, 160, 243);
+  background-color: rgb(8, 80, 173);
   border: none;
   color: white;
 }
 .button__nav:hover,
 .button__nav:focus {
-  background-color: rgb(8, 80, 173);
+  background-color: white;
+  color: rgb(8, 80, 173);
 }
