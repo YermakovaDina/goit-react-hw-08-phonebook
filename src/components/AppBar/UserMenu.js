@@ -13,7 +13,7 @@ export function UserMenu() {
     <div className="">
       <span className="">Hi, {name}</span>
 
-      <button onClick={handleClick} className="" type="button">
+      <button onClick={handleClick} className="button__nav" type="button">
         Logout
       </button>
     </div>

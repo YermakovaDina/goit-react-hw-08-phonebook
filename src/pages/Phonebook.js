@@ -1,11 +1,12 @@
 import Form from '../components/Forms/Form';
 import Filter from '../components/Filters/Filter';
 import ContactsList from '../components/ContactList/ContactList';
+import './Phonebook.css';
 
 export function Phonebook() {
   return (
-    <div>
-      <h1>Phonebook</h1>
+    <div className="form__phone">
+      <h1 className="form__title">Phonebook</h1>
 
       <Form />
 

@@ -5,8 +5,6 @@ import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector } from 'react-redux';
 import { submitPhone } from '../../redux/contacts/operations';
 
-//import './Form.css';
-
 export default function Form() {
   const inputNameId = uuidv4();
   const inputNumberId = uuidv4();
@@ -45,17 +43,16 @@ export default function Form() {
   return (
     <>
       <form
-        className=""
         onSubmit={e => {
           e.preventDefault();
           add([name, number]);
         }}
       >
-        <label className="" htmlFor={inputNameId}>
+        <label className="form_label" htmlFor={inputNameId}>
           Name
         </label>
         <input
-          className=""
+          className="form__input"
           id={inputNameId}
           value={name}
           type="text"
@@ -66,11 +63,11 @@ export default function Form() {
           onChange={handleChangeAllInput}
         />
 
-        <label className="" htmlFor={inputNumberId}>
+        <label className="form_label" htmlFor={inputNumberId}>
           Phone
         </label>
         <input
-          className=""
+          className="form__input"
           id={inputNumberId}
           value={number}
           type="tel"
@@ -81,7 +78,7 @@ export default function Form() {
           onChange={handleChangeAllInput}
         />
 
-        <button className="" type="submit">
+        <button className="form_button" type="submit">
           Add contact
         </button>
       </form>

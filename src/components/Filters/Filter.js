@@ -9,20 +9,18 @@ export default function Filter() {
   const onChange = e => dispatch(filterContact(e.currentTarget.value));
   return (
     <div>
-      <label className="filtr_label">
-        Find contacts by name:
-        <input
-          type="text"
-          id="find"
-          name="name"
-          pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-          title="The name can only consist of letters, apostrophes, dashes and spaces."
-          required
-          value={value}
-          onChange={onChange}
-          className="filtr_input"
-        />
-      </label>
+      <label className="filter_label">Find contacts by name:</label>
+      <input
+        type="text"
+        id="find"
+        name="name"
+        pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+        title="The name can only consist of letters, apostrophes, dashes and spaces."
+        required
+        value={value}
+        onChange={onChange}
+        className="filter_input"
+      />
     </div>
   );
 }

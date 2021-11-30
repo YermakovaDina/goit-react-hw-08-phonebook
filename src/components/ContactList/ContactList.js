@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPhones, deleteById } from '../../redux/contacts/operations';
+import './ContactList.css';
 
 export default function ContactsList() {
   const contacts = useSelector(state => state.contacts);
